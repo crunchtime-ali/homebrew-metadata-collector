@@ -3,7 +3,7 @@ name: collect-metadata
 on: 
   push:
     branches: 
-      - setup-workflow
+      - setup-workflow-1
 
 jobs:
   build:
