@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Git repo   
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           repository: Homebrew/homebrew-core
       - name: Continue
