@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Git repo   
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 
         with:
           repository: Homebrew/homebrew-core
       - name: Continue
         run: |
           ls -l
-          cd homebrew-core
-          ls -l
+          time git --no-pager log -- Formula/zlib.rb --pretty=oneline
