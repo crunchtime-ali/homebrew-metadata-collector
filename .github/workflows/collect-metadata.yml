@@ -9,12 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Checkout the Git repo
-      with:
-        repository: Homebrew/homebrew-core
-    - name: Continue
-      run: |
-        ls -l
-        cd homebrew-core
-        ls -l
+      - name: Checkout the Git repo   
+        uses: actions/checkout@v1
+        with:
+          repository: Homebrew/homebrew-core
+      - name: Continue
+        run: |
+          ls -l
+          cd homebrew-core
+          ls -l
