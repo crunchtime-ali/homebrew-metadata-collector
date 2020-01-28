@@ -15,7 +15,7 @@ jobs:
           #repository: Homebrew/homebrew-core
       - name: Continue
         run: |
-          git clone git@github.com:Homebrew/homebrew-core.git
+          git clone https://github.com/Homebrew/homebrew-core.git
           cd homebrew-core
           ls -l
           time git --no-pager log -- Formula/zlib.rb --pretty=oneline
