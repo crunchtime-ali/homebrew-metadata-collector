@@ -9,11 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the Git repo   
-        uses: actions/checkout@v2 
-        with:
-          repository: Homebrew/homebrew-core
+      #- name: Checkout the Git repo   
+        #uses: actions/checkout@v2 
+        #with:
+          #repository: Homebrew/homebrew-core
       - name: Continue
         run: |
+          git clone git@github.com:Homebrew/homebrew-core.git
+          cd homebrew-core
           ls -l
           time git --no-pager log -- Formula/zlib.rb --pretty=oneline
